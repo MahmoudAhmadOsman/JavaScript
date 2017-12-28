@@ -1,0 +1,65 @@
+<section class="content">
+    <nav>
+        <li>Home</li>
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JavaScript</li>
+    </nav>
+    <br />
+    <br />
+    <p>
+        After you click on this button the text of the button, the color, and the size of the button will change.
+    </p>
+    <button id="btn">Change the text of the button</button>
+</section>
+<!-- Start of CSS Section-->
+<style type="text/css">
+.content {
+    width: 450px;
+    margin: 10px auto;
+}
+
+li {
+    display: flex;
+    float: left;
+    margin-right: 20px;
+    font-size: 1.4em;
+    color: #f00;
+}
+
+button {
+    background-color: #EB0909;
+    width: 220px;
+    height: 40px;
+    border-radius: 15px 5px 15px 5px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: width .2s ease-in-out;
+}
+</style>
+<!-- End of CSS Section-->
+<!-- Start of JavaScript Click Event  -->
+<script type="text/javascript">
+var changeText = document.getElementById("btn")
+changeText.onclick = myFunction;
+changeText.onblur = backtodefault;
+
+function myFunction() {
+    changeText.innerHTML = "The text is changed by javascript";
+    changeText.style.backgroundColor = "#5574C3";
+    changeText.style.width = "300px";
+    changeText.style.color = "#000";
+    changeText.style.borderRadius = "0px";
+}
+
+function backtodefault() {
+    //changeText.innerHTML = "The text is changed by javascript";
+    changeText.style.backgroundColor = "#EB0909";
+    changeText.style.width = "250px";
+    changeText.style.height = "40px";
+    changeText.style.color = "#fff";
+    changeText.style.borderRadius = "15px 5px 15px 5px";
+}
+</script>
+<!-- End of JavaScript Click Event  -->
