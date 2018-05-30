@@ -4,13 +4,13 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>JS Bin</title>
+    <title>Form Validation</title>
 </head>
 
 <body>
     <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
-    <form name="form-one" action="process.php" onsubmit="return validateForm()" method="post">
-        First Name:
+    <form name="form-one" action="process.php" method="POST" onsubmit="return validateForm()" >
+        <b>First Name:</b>
         <input type="text" name="fname">
         <input type="submit" value="Submit">
     </form>
@@ -36,7 +36,7 @@ function validateForm() {
     if (fname == '') {
         alert('First name is required!');
         var fname = document.getElementById('fname').value;
-        fname.style.backgroundColor = "yellow";
+        	fname.style.backgroundColor = "yellow";
         return false;
 
     } else {
