@@ -1,2 +1,2 @@
-# JavaScript
-Basic JavaScript Click Event
+## JavaScript
+#### Basic JavaScript and form validation

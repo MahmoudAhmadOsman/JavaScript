@@ -1,58 +1,89 @@
-function validateForm() {
-    var fname = document.forms['form-one']['fname'].value;
+ function validate_form() {
+
+     if (document.formOne.name.value == "") {
+         alert("Name is required!");
+         document.formOne.name.focus();
+         return false
+     }
+
+     if (document.formOne.age.value == "") {
+         alert("Age is required!");
+         document.formOne.age.focus();
+         return false
+     }
 
 
-    if (fname == '') {
-        alert('First name is required!');
-        var fname = document.getElementById('fname').value;
-        fname.style.backgroundColor = "yellow";
-        return false;
+     if (document.formOne.email.value == "") {
+         alert("Email is required!");
+         document.formOne.email.focus();
+         return false
+     }
 
-    } else {
-        return true;
-    }
-}
+     if (document.formOne.phone.value == "") {
+         alert("Phone number is required!");
+         document.formOne.phone.focus();
+         return false
+
+     }
 
 
+     if (document.formOne.state.value == "") {
+         alert("State number is required!");
+         document.formOne.state.focus();
+         return false
 
-//Sefl invokin function
+     }
 
-(function() {
-    var pid = document.getElementsByClassName("btn")[0];
-    pid.addEventListener("mouseover", changeColor, false);
+     if (document.formOne.zipCode.value == "") {
+         alert("Zip code is required!");
+         document.formOne.zipCode.focus();
+         return false
 
-    function changeColor() {
-        this.style.color = "#f00";
-    }
-    pid.addEventListener("mouseout", mouseLeave, false);
-
-    function mouseLeave() {
-        this.style.color = "#000";
-    }
-}());
-
+     }
 
 
 
-//Start of JavaScript Click Event
+ }
 
-var changeText = document.getElementById("btn")
-changeText.onclick = myFunction;
-changeText.onblur = backtodefault;
 
-function myFunction() {
-    changeText.innerHTML = "The text is changed by javascript";
-    changeText.style.backgroundColor = "#5574C3";
-    changeText.style.width = "300px";
-    changeText.style.color = "#000";
-    changeText.style.borderRadius = "0px";
-}
 
-function backtodefault() {
-    changeText.style.backgroundColor = "#EB0909";
-    changeText.style.width = "250px";
-    changeText.style.height = "40px";
-    changeText.style.color = "#fff";
-    changeText.style.borderRadius = "15px 5px 15px 5px";
-}
- 
+ //Self invokin function
+
+ (function() {
+     var pid = document.getElementsByClassName("btn")[0];
+     pid.addEventListener("mouseover", changeColor, false);
+
+     function changeColor() {
+         this.style.color = "#ccc";
+     }
+     pid.addEventListener("mouseout", mouseLeave, false);
+
+     function mouseLeave() {
+         this.style.color = "#000";
+     }
+ }());
+
+
+
+
+ //Start of JavaScript Click Event
+
+ var changeText = document.getElementById("btn")
+ changeText.onclick = changeContent;
+ changeText.onblur = backToDefault;
+
+ function changeContent() {
+     changeText.innerHTML = "The text is changed by javascript";
+     changeText.style.backgroundColor = "#5574C3";
+     changeText.style.width = "60%";
+     changeText.style.color = "#fff";
+     changeText.style.border = "0px";
+ }
+
+ function backToDefault() {
+     changeText.style.backgroundColor = "#EB0909";
+     changeText.style.width = "50%";
+     changeText.style.height = "40px";
+     changeText.style.color = "#fff";
+     changeText.style.borderRadius = "15px 5px 15px 5px";
+ }

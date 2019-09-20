@@ -1,0 +1,74 @@
+<!-- 
+    
+    **Author: Mahmoud Osman
+ 
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="container">
+        <div class="form_header">
+            <h1>Register Now</h1>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <form action="#" method="POST" class="form-inlines" name="formOne" onsubmit="return validate_form();">
+                    <div class="form-group">
+                        <input type="text" class="form-control form-control-lg" name="name" id="name" placeholder="Enter your name">
+                        <label for="name">Enter your full name</label>
+                    </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <input type="text" class="form-control form-control-lg" name="age" id="age" placeholder="dd/mm/yyyy">
+                    <label for="age">Enter your age (numbers only)</label>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <input type="email" class="form-control form-control-lg" name="email" id="email" placeholder="Enter your email">
+                    <label for="email">Enter your email address</label>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <input type="text" class="form-control form-control-lg" name="phone" id="phone" placeholder="Enter your phone" maxlength="10">
+                    <label for="phone">Enter your phone number</label>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="form-group">
+                    <input type="text" class="form-control form-control-lg" name="state" id="state" placeholder="State" maxlength="2">
+                    <label for="state">Enter your state</label>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="form-group">
+                    <input type="text" class="form-control form-control-lg" name="zipCode" id="zipCode" placeholder="zip Code">
+                    <label for="zipCode" maxlength="5">Enter your zip code</label>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <input type="submit" class="btn btn-outline-danger btn-lg btn-block" value="SUBMIT" style="min-width: 350px;">
+                </div>
+            </div>
+            </form>
+        </div>
+    </section>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
