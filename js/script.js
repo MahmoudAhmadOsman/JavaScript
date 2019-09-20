@@ -66,7 +66,7 @@
 
 
 
- //Start of JavaScript Click Event
+ // Click and hover Events
 
  var changeText = document.getElementById("btn")
  changeText.onclick = changeContent;
@@ -75,14 +75,14 @@
  function changeContent() {
      changeText.innerHTML = "The text is changed by javascript";
      changeText.style.backgroundColor = "#5574C3";
-     changeText.style.width = "60%";
+     changeText.style.width = "70%";
      changeText.style.color = "#fff";
      changeText.style.border = "0px";
  }
 
  function backToDefault() {
      changeText.style.backgroundColor = "#EB0909";
-     changeText.style.width = "50%";
+     changeText.style.width = "100%";
      changeText.style.height = "40px";
      changeText.style.color = "#fff";
      changeText.style.borderRadius = "15px 5px 15px 5px";
