@@ -1,34 +1,39 @@
-.form_header{
+.form_header {
     background-color: #e4e4e4;
     width: auto;
     height: 80px;
-      margin-bottom: 60px;
+    margin-bottom: 60px;
     text-align: center;
 }
 
-.form_header h1{
+.form_header h1 {
     line-height: 65px;
     font-size: 60px;
 }
 
 
 
-input[type="text"] {
-    width: 150px;
+input[type="text"],
+input[type="email"] {
+    width: 98%;
     transition: ease-in-out, width .35s ease-in-out;
 }
 
 input[type="text"]:focus {
-    width: 60%;
+    width: 100%;
+    background-color: #f94;
+}
+
+input[type="email"]:focus {
+    width: 100%;
     background-color: #f94;
 }
 
 
- 
 
 .content {
     width: 450px;
-    margin: 10px auto;
+    margin-top: 40px;
 }
 
 li {
@@ -49,7 +54,7 @@ button {
     cursor: pointer;
     transition: width .2s ease-in-out;
     -webkit-transition: width .2s ease-in-out;
-        -moz-transition: width .2s ease-in-out;
-        -o-transition: width .2s ease-in-out;
-        -ms-transition: width .2s ease-in-out;
+    -moz-transition: width .2s ease-in-out;
+    -o-transition: width .2s ease-in-out;
+    -ms-transition: width .2s ease-in-out;
 }

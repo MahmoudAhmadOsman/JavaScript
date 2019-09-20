@@ -9,29 +9,28 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <title>JavaScript</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <section class="container">
-        <div class="content">
+    
+    <div class="container">
+        <div class="row">
             <nav>
                 <ul>
-                    <li>Home</li>
-                    <li>HTML5</li>
-                    <li>CSS3</li>
-                    <li>JavaScript</li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="mouse_event.html">Mouse Event</a></li>
+                    <li><a href="self_invoking_function.html">Self invoking function</a></li>
                 </ul>
             </nav>
-            <br />
-            <br />
-            <p>
-                After you click on this button the text of the button, the color, and the size of the button will change.
-            </p>
+        </div>
+    </div>
+    <section class="container">
+        <div class="content">
+            <p> After you click on this button the text of the button, the color, and the size of the button will change.</p>
             <button id="btn" class="btn btn-outline-danger">Change the text of the button</button>
         </div>
     </section>
-     
     <script src="js/script.js"></script>
 </body>
 
