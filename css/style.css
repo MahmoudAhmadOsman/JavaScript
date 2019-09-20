@@ -58,3 +58,6 @@ button {
     -o-transition: width .2s ease-in-out;
     -ms-transition: width .2s ease-in-out;
 }
+#message{
+    display: none;
+}

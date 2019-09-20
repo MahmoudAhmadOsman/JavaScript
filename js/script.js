@@ -1,7 +1,7 @@
  function validate_form() {
 
      if (document.formOne.name.value == "") {
-         alert("Name is required!");
+         alert("Full name is required!");
          document.formOne.name.focus();
          return false
      }
@@ -14,7 +14,7 @@
 
 
      if (document.formOne.email.value == "") {
-         alert("Email is required!");
+         alert("Email address is required!");
          document.formOne.email.focus();
          return false
      }
@@ -28,7 +28,7 @@
 
 
      if (document.formOne.state.value == "") {
-         alert("State number is required!");
+         alert("State value is required!");
          document.formOne.state.focus();
          return false
 
@@ -39,9 +39,19 @@
          document.formOne.zipCode.focus();
          return false
 
+     } else {
+         //alert("Thank you for your message!");
+         let message = document.getElementById("message");
+         message.style.display = "block";
+         let thankyou = document.getElementById("thank_you");
+
+         thankyou.innerHTML = "Thank you for your message!";
+
+
+         return false
+
+
      }
-
-
 
  }
 
