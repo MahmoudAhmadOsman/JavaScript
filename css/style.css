@@ -1,9 +1,19 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    height: 1500px;
+}
+
 .form_header {
     background-color: #e4e4e4;
     width: auto;
     height: 80px;
     margin-bottom: 60px;
     text-align: center;
+    line-height: 80px;
 }
 
 .form_header h1 {
@@ -11,6 +21,9 @@
     font-size: 60px;
 }
 
+.para {
+    text-align: left;
+}
 
 
 input[type="text"],
@@ -37,11 +50,15 @@ input[type="email"]:focus {
 }
 
 li {
-    display: flex;
-    float: left;
-    margin-right: 20px;
+
+
     font-size: 1.4em;
     color: #f00;
+}
+
+.main_form label {
+
+    color: #999
 }
 
 button {
@@ -58,6 +75,7 @@ button {
     -o-transition: width .2s ease-in-out;
     -ms-transition: width .2s ease-in-out;
 }
-#message{
+
+#message {
     display: none;
 }

@@ -40,12 +40,11 @@
          return false
 
      } else {
-         //alert("Thank you for your message!");
          let message = document.getElementById("message");
          message.style.display = "block";
          let thankyou = document.getElementById("thank_you");
 
-         thankyou.innerHTML = "Thank you for your message!";
+         thankyou.innerHTML = '<b>Thank you</b> for your message! <i class="text-danger">This is just a testing!</i>';
 
 
          return false

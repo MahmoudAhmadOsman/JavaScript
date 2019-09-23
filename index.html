@@ -20,20 +20,33 @@
 <body>
     <div class="container mb-5">
         <div class="row">
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="mouse_event.html">Mouse Event</a></li>
-                    <li><a href="self_invoking_function.html">Self invoking function</a></li>
-                </ul>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="index.html">Register Now</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="mouse_event.html">Mouse Event</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="self_invoking_function.html">Self invoking function</a>
+                        </li>
+                    </ul>
+                </div>
             </nav>
         </div>
     </div>
     <section class="container">
-        <div class="form_header">
-            <h1>Register Now</h1>
+        <h1 class="form_header">Register Now</h1>
+        <div class="alert alert-success text-center" id="message">
+            <p id="thank_you"><p>
         </div>
-        <div class="row">
+        <div class="row main_form">
             <div class="col-md-4">
                 <form action="#" method="POST" class="form-inlines" name="formOne" onsubmit="return validate_form();">
                     <div class="form-group">
@@ -79,12 +92,42 @@
             </form>
         </div>
     </section>
-    <div class="container">
-        <div class="alert alert-success text-center" id="message">
-            <p id="thank_you">
-                <p>
+    <section class="container">
+        <h1 class="text-center text-danger">Hosting Plans</h1>
+        <hr>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://placeimg.com/640/480/tech" class="card-img-top" alt="Shared">
+                    <div class="card-body">
+                        <h3 class="card-title text-primary">Shared</h3>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit vitae ipsa nihil officiis nam rerum fuga amet laborum ducimus dignissimos!</p>
+                        <a href="#" class="btn btn-primary btn-lg btn-block">Shared Plan</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://placeimg.com/640/480/tech" class="card-img-top" alt="VPS">
+                    <div class="card-body">
+                        <h3 class="card-title text-danger">VPS</h3>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit vitae ipsa nihil officiis nam rerum fuga amet laborum ducimus dignissimos!</p>
+                        <a href="#" class="btn btn-danger btn-lg btn-block">VPS Plan</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://placeimg.com/640/480/tech" class="card-img-top" alt="Dedicated">
+                    <div class="card-body">
+                        <h3 class="card-title text-success">Dedicated</h3>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit vitae ipsa nihil officiis nam rerum fuga amet laborum ducimus dignissimos!</p>
+                        <a href="#" class="btn btn-success btn-lg btn-block">Dedicated Plan</a>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
+    </section>
     <script src="js/script.js"></script>
 </body>
 
