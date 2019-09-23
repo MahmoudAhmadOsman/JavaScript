@@ -4,7 +4,8 @@
 }
 
 body {
-    height: 1500px;
+    height: auto;
+    overflow-x: hidden;
 }
 
 .form_header {
@@ -76,6 +77,46 @@ button {
     -ms-transition: width .2s ease-in-out;
 }
 
+#hosting_plans {
+    width: auto;
+    min-height: 850px;
+    position: relative;
+    background: #ececec;
+    margin-bottom: 40px;
+    display: block;
+
+
+}
+
+#hosting_plans img {
+    transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+
+}
+
+#hosting_plans img:hover {
+    opacity: .6;
+    cursor: pointer;
+
+}
+
 #message {
     display: none;
+}
+
+
+.footer {
+    width: 100%;
+    height: auto;
+    margin-top: 40px;
+    background-color: #49494a;
+    color: #fff;
+    text-align: center;
+}
+
+.footer p {
+    line-height: 80px
 }
