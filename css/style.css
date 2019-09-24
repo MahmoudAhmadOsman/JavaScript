@@ -50,16 +50,16 @@ input[type="email"]:focus {
     margin-top: 40px;
 }
 
-li {
-
-
+nav li {
     font-size: 1.4em;
-    color: #f00;
 }
 
 .main_form label {
 
     color: #999
+}
+.li_bg{
+    background-color: #f00;
 }
 
 button {
@@ -106,6 +106,63 @@ button {
 #message {
     display: none;
 }
+
+/*all_plans style*/
+.all_plans {
+    position: relative;
+    margin-top: 120px;
+    /*margin-bottom: 80px;*/
+}
+
+.all_plans ul {
+    background-color: #b35f1b;
+    height: 40px;
+    line-height: 40px;
+}
+
+.all_plans ul li {
+    width: 10%;
+    height: 40px;
+    list-style: none;
+    display: inline-block;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    border-right: 2px solid #dca97f;
+    text-align: center;
+       transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-ou
+
+}
+.all_plans ul li.active{
+    background-color: #9a4908;
+}
+.all_plans ul li:hover{
+    background-color: #ce864c
+}
+
+
+
+/*Add class to all*/
+.all_div_plans{
+    border-bottom: 4px solid #b14f00;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .footer {

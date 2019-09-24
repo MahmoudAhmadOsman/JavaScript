@@ -9,12 +9,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <link rel="icon" type="image/jpg" href="https://www.netsansoftware.com/images/netsansoftware_favicon.jpg">
     <title>JavaScript</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -86,7 +83,7 @@
                     <label for="zipCode" maxlength="5">Enter your zip code</label>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-3">
                 <div class="form-group">
                     <input type="submit" class="btn btn-outline-danger btn-lg btn-block" value="SUBMIT">
                 </div>
@@ -94,23 +91,54 @@
             </form>
         </div>
     </section>
+
+<!-- Start of hosting plans -->
+
+    <section class="container">
+        <div class="all_plans">
+            <div class="row">
+                <div class="col-md-12">
+                    <ul class="tabs_list">
+                        <li class="active" data-class="all"><a href="#"></a>All</li>
+                        <li data-class="basic"><a href="#"></a>Basic</li>
+                        <li data-class="shared"><a href="#"></a>Shared</li>
+                        <li data-class="vps"><a href="#"></a>VPS</li>
+                        <li data-class="dedicated"><a href="#"></a>Dedicated</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- End of hosting plans -->
+
     <section class="container" id="hosting_plans">
         <h1 class="text-center text-danger">Hosting Plans </h1>
-        <hr>
+        <h>
         <div class="row">
-            <div class="col-md-4">
+                <div class="col-md-3">
                 <div class="card">
-                    <img src="https://placeimg.com/640/480/tech/879" class="card-img-top" alt="Shared">
+                    <img src="https://placeimg.com/640/480/tech/879" class="card-img-top basic" alt="basic plan">
                     <div class="card-body">
-                        <h3 class="card-title text-primary">Shared <b class="float-right">$5.99<small>/m</small></b></h3>
+                        <h3 class="card-title text-primary">Basic <b class="float-right">$5.99<small>/m</small></b></h3>
                         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit vitae ipsa nihil officiis nam rerum fuga amet laborum ducimus dignissimos!</p>
-                        <a href="#" class="btn btn-outline-primary btn-lg btn-block">Shared Plan</a>
+                        <a href="#" class="btn btn-outline-primary btn-lg btn-block">Basic Plan</a>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-3">
                 <div class="card">
-                    <img src="https://placeimg.com/640/480/tech/25411" class="card-img-top" alt="VPS">
+                    <img src="https://placeimg.com/640/480/tech/667" class="card-img-top shared" alt="Shared">
+                    <div class="card-body">
+                        <h3 class="card-title text-success">Shared <b class="float-right">$15.99<small>/m</small></b></h3>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit vitae ipsa nihil officiis nam rerum fuga amet laborum ducimus dignissimos!</p>
+                        <a href="#" class="btn btn-outline-success btn-lg btn-block">Shared Plan</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="https://placeimg.com/640/480/tech/25411" class="card-img-top vps" alt="VPS">
                     <div class="card-body">
                         <h3 class="card-title text-danger">VPS <b class="float-right">$59.9<small>/m</small></b></h3>
                         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit vitae ipsa nihil officiis nam rerum fuga amet laborum ducimus dignissimos!</p>
@@ -118,9 +146,9 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-3">
                 <div class="card">
-                    <img src="https://placeimg.com/640/480/tech/888" class="card-img-top" alt="Dedicated">
+                    <img src="https://placeimg.com/640/480/tech/888" class="card-img-top dedicated" alt="Dedicated">
                     <div class="card-body">
                         <h3 class="card-title text-success">Dedicated <b class="float-right">$99.99<small>/m</small></b></h3>
                         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit vitae ipsa nihil officiis nam rerum fuga amet laborum ducimus dignissimos!</p>
@@ -130,13 +158,24 @@
             </div>
         </div>
     </section>
+
+
+
+
+
+
+
     <section class="container-fluid footer">
         <div class="row">
             <div class="col-md-12">
-                <p>&copy; Copyright. 2019. Built with Bootstrap 4. By Mahmoud Osman</p>
+                <p>&copy; Copyright. 2019. Alrights Reserved. Built with BS4. By Mahmoud Osman</p>
             </div>
         </div>
     </section>
+
+
+  <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 
