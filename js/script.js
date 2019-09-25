@@ -102,58 +102,32 @@
 
 
 
-// all_plans section
+     // all_plans section
 
-$(document).ready(function() {
-     $(".all_plans li").on("click", function() {
+     $(document).ready(function() {
+         $(".all_plans li").on("click", function() {
 
-         $(this).addClass("li_bg").siblings().removeClass('li_bg');
+             $(this).addClass("li_bg").siblings().removeClass('li_bg');
 
-         //console.log( $(this).data('class'));
+             //console.log( $(this).data('class'));
 
 
-     // check
+             // check
 
-     if ($(this).data('class') === 'all') {
+             if ($(this).data('class') === 'all') {
 
-         $('#hosting_plans .col-md-3').css("opacity", 1);
-          $("#hosting_plans img").addClass("all_div_plans");
+                 $('#hosting_plans .col-md-3').css("opacity", 1);
+                 $("#hosting_plans img").addClass("all_div_plans");
+                  $("#hosting_plans img").removeClass("border_right");
 
-     } else {
-            //console.log($(this).data('class'));
-         $('#hosting_plans .card-img-top').css("opacity", .5);
+             } else {
  
-         $($(this).data('class')).parent().css('opacity', 1);
+                  //$("#hosting_plans img").addClass("border_right").siblings().removeClass("border_right");
+                  $("#hosting_plans img").removeClass("all_div_plans");
 
+             }
 
-           $("#hosting_plans img").removeClass("all_div_plans");
-
-     }
-
-
-
-
-
-});
-
-
-
-
-
-
-
-
-
-
-         // $(".all_plans .active").click(function(){
-         //   $("#hosting_plans img").addClass("all_div_plans");
-         // });
-
-
-
-
-
-
+         });
 
 
 

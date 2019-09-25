@@ -58,8 +58,9 @@ nav li {
 
     color: #999
 }
-.li_bg{
-    background-color: #f00;
+
+.li_bg {
+    background-color: #8fff86;
 }
 
 button {
@@ -131,25 +132,38 @@ button {
     cursor: pointer;
     border-right: 2px solid #dca97f;
     text-align: center;
-       transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
     -webkit-transition: all .5s ease-in-out;
     -moz-transition: all .5s ease-in-out;
     -ms-transition: all .5s ease-in-out;
     -o-transition: all .5s ease-in-ou
-
 }
-.all_plans ul li.active{
+
+.all_plans ul li.active {
     background-color: #9a4908;
 }
-.all_plans ul li:hover{
+
+.all_plans ul li:hover {
     background-color: #ce864c
 }
 
 
 
+.img_opacity {
+    opacity: .5;
+}
+
+
+
+
+
 /*Add class to all*/
-.all_div_plans{
+.all_div_plans {
     border-bottom: 4px solid #b14f00;
+}
+
+.border_right {
+    border-right: 4px solid #f00;
 }
 
 
