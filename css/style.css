@@ -61,6 +61,7 @@ nav li {
 
 .li_bg {
     background-color: #8fff86;
+    color: #000 !important;
 }
 
 button {
@@ -165,16 +166,6 @@ button {
 .border_right {
     border-right: 4px solid #f00;
 }
-
-
-
-
-
-
-
-
-
-
 
 
 
