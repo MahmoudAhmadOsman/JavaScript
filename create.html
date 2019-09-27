@@ -1,0 +1,134 @@
+<!-- 
+
+**Author: Mahmoud Osman
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/jpg" href="https://www.netsansoftware.com/images/netsansoftware_favicon.jpg">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container mb-5">
+        <div class="row">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light" id="main_nav">
+                <a class="navbar-brand" href="index.html">Register Now</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mynav" aria-controls="mynav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mynav">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="mouse_event.html">Mouse Event</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="self_invoking_function.html">Function</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="create.html">Books</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Start of available lists -->
+    <section class="avaible_lists">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <!--  <form action="#" id="add_books">  -->
+                    <div id="book-list">
+                        <h2 class="title text-primary">Our Available Books List</h2>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Book Title</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <a class="name title">Real Chord Changes For 104 Standards</a>
+                                        <a href="#" class="btn btn-outline-danger float-right del_book">DELETE</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a class="name title">The Beatles Book</a>
+                                        <a href="#" class="btn btn-outline-danger float-right del_book">DELETE</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a class="name title">Irving Berlin Leonard</a>
+                                        <a href="#" class="btn btn-outline-danger float-right del_book">DELETE</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a class="name title">Celtic Haward</a>
+                                        <a href="#" class="btn btn-outline-danger float-right del_book">DELETE</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a class="name title">First Time Dover</a>
+                                        <a href="#" class="btn btn-outline-danger float-right del_book">DELETE</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div> <!--  End of row div -->
+    </section>
+    <!-- End of available lists -->
+    <div class="container">
+        <h3 class="to_do text-center text-danger">Create To Do List</h3>
+        <form action="#" id="add_books">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>
+                            <small class="text-muted">Please, create your favorite tasks here</small>
+                        </th>
+                        <th> <small class="text-muted">After providing first name, click on save task</small></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="text" class="form-control form-control-lg" name="" id=" " placeholder="Enter task name">
+                            <label for="name">Please, enter task name</label></td>
+                        <td><input type="submit" id="submit_task" class="btn btn-outline-success btn-lg btn-block" value="SAVE TASK"></td>
+                    </tr>
+                </tbody>
+            </table>
+    </div>
+    </form>
+    <section class="container-fluid footer" style="margin-top: 170px">
+        <div class="row">
+            <div class="col-md-12">
+                <p>&copy; Copyright. 2019. Alrights Reserved. Built with BS4. By Mahmoud Osman</p>
+            </div>
+        </div>
+    </section>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!--    <script src="js/script.js"></script> -->
+    <script src="js/task.js"></script>
+</body>
+
+</html>
