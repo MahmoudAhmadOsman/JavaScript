@@ -8,22 +8,21 @@
     display: block;
 
 
-}
-
-#hosting_plans img {
+img {
     transition: all .5s ease-in-out;
     -webkit-transition: all .5s ease-in-out;
     -moz-transition: all .5s ease-in-out;
     -ms-transition: all .5s ease-in-out;
     -o-transition: all .5s ease-in-out;
-
-}
-
-#hosting_plans img:hover {
-    opacity: .6;
+&:hover{
+       opacity: .6;
     cursor: pointer;
+}
 
 }
+
+}
+
 
 #message {
     display: none;
@@ -33,42 +32,42 @@
 .all_plans {
     position: relative;
     margin-top: 120px;
-    /*margin-bottom: 80px;*/
-}
+ 
 
-.all_plans ul {
-    background-color: #b35f1b;
-    height: 40px;
-    line-height: 40px;
-}
+ul {
+        background-color: #b35f1b;
+        height: 40px;
+        line-height: 40px;
+        li {
+            width: 10%;
+            height: 40px;
+            list-style: none;
+            display: inline-block;
+            color: #fff;
+            font-weight: bold;
+            font-size: 18px;
+            cursor: pointer;
+            border-right: 2px solid #dca97f;
+            text-align: center;
+            transition: all .5s ease-in-out;
+            -webkit-transition: all .5s ease-in-out;
+            -moz-transition: all .5s ease-in-out;
+            -ms-transition: all .5s ease-in-out;
+            -o-transition: all .5s ease-in-out;
+        
+            &:hover{
+                background-color: #ce864c
+            }
+            &:nth-child(5){
+                border: 0px;
+            }
+            li.active {
+                background-color: #9a4908;
+            }
+        }
+       
+    }
 
-.all_plans ul li {
-    width: 10%;
-    height: 40px;
-    list-style: none;
-    display: inline-block;
-    color: #fff;
-    font-weight: bold;
-    font-size: 18px;
-    cursor: pointer;
-    border-right: 2px solid #dca97f;
-    text-align: center;
-    transition: all .5s ease-in-out;
-    -webkit-transition: all .5s ease-in-out;
-    -moz-transition: all .5s ease-in-out;
-    -ms-transition: all .5s ease-in-out;
-    -o-transition: all .5s ease-in-ou
-}
-.all_plans ul li:nth-child(5){
-    border: 0px;
-}
-
-.all_plans ul li.active {
-    background-color: #9a4908;
-}
-
-.all_plans ul li:hover {
-    background-color: #ce864c
 }
 
 
