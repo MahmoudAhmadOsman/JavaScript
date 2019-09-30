@@ -1,0 +1,14 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    height: auto;
+    overflow-x: hidden;
+}
+
+@import "header";
+@import "nav";
+@import "hosting";
+@import "footer";

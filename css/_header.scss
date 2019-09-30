@@ -1,0 +1,40 @@
+.form_header {
+    background-color: #dad7d763;
+    width: auto;
+    height: 80px;
+    margin-bottom: 60px;
+    text-align: center;
+    line-height: 80px;
+}
+
+.form_header h1 {
+    line-height: 65px;
+    font-size: 60px;
+}
+
+.para {
+    text-align: left;
+}
+
+
+input[type="text"],
+input[type="email"] {
+    width: 98%;
+    transition: ease-in-out, width .35s ease-in-out;
+}
+
+input[type="text"]:focus {
+    width: 100%;
+    background-color: #f94;
+}
+
+input[type="email"]:focus {
+    width: 100%;
+    background-color: #f94;
+}
+
+
+.content {
+    width: 450px;
+    margin-top: 40px;
+}
