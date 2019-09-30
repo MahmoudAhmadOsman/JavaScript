@@ -118,12 +118,12 @@
 
                  $('#hosting_plans .col-md-3').css("opacity", 1);
                  $("#hosting_plans img").addClass("all_div_plans");
-                  $("#hosting_plans img").removeClass("border_right");
+                 $("#hosting_plans img").removeClass("border_right");
 
              } else {
- 
-                  //$("#hosting_plans img").addClass("border_right").siblings().removeClass("border_right");
-                  $("#hosting_plans img").removeClass("all_div_plans");
+
+                 //$("#hosting_plans img").addClass("border_right").siblings().removeClass("border_right");
+                 $("#hosting_plans img").removeClass("all_div_plans");
 
              }
 
