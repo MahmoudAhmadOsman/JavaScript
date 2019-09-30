@@ -1,6 +1,11 @@
 * {
   padding: 0px;
   margin: 0px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
 }
 
 body {
@@ -8,6 +13,7 @@ body {
   overflow-x: hidden;
 }
 
+/*Start of header */
 .form_header {
   background-color: #dad7d763;
   width: auto;
@@ -48,6 +54,8 @@ input[type="email"]:focus {
   margin-top: 40px;
 }
 
+/*End of header */
+/*Start of nav */
 nav nav li {
   font-size: 1.4em;
 }
@@ -70,6 +78,8 @@ nav nav li {
   color: #000 !important;
 }
 
+/*End of nav */
+/*Start of hosting section */
 #hosting_plans {
   width: auto;
   min-height: 850px;
@@ -166,6 +176,8 @@ a.del_book {
   font-weight: bold;
 }
 
+/*End of hosting section */
+/*Start of footer section */
 .footer {
   width: 100%;
   min-height: 150px;
@@ -178,4 +190,6 @@ a.del_book {
 .footer p {
   line-height: 150px;
 }
+
+/*End of footer section */
 /*# sourceMappingURL=style.css.map */

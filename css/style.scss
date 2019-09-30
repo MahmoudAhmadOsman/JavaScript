@@ -1,6 +1,11 @@
 * {
     padding: 0px;
     margin: 0px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
 }
 
 body {
@@ -8,7 +13,21 @@ body {
     overflow-x: hidden;
 }
 
+/*Start of header */
 @import "header";
+/*End of header */
+
+/*Start of nav */
 @import "nav";
-@import "hosting";
+
+/*End of nav */
+
+
+/*Start of hosting section */
+    @import "hosting";
+/*End of hosting section */
+
+/*Start of footer section */
 @import "footer";
+
+/*End of footer section */
