@@ -1,19 +1,22 @@
+<!-- 
+    
+    **Author: Mahmoud Osman
+ 
+-->
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="icon" type="image/jpg" href="https://www.netsansoftware.com/images/netsansoftware_favicon.jpg">
     <title>JavaScript</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <div class="container">
+    <div class="container mb-5">
         <div class="row">
             <nav class="navbar navbar-expand-lg navbar-light bg-light" id="main_nav">
                 <a class="navbar-brand" href="index.html">Register Now</a>
@@ -31,7 +34,7 @@
                         <li class="nav-item">
                             <a class="nav-link" href="self_invoking_function.html">Function</a>
                         </li>
-                          <li class="nav-item">
+                        <li class="nav-item">
                             <a class="nav-link" href="book.html">Books</a>
                         </li>
                         <li class="nav-item">
@@ -42,17 +45,25 @@
             </nav>
         </div>
     </div>
-    <div class="container mt-5">
-        <h1>Self Invoking Function</h1><hr>
-        <h3 class="text-danger">Hover over</h3>
+    <section class="container">
         <div class="row">
-            <p class="btn para">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Etiam porttitor lectus massa, vitae egestas dolor porttitor vitae. Sed aliquam id nibh non facilisis.
-                Maecenas fermentum mattis posuere. Vestibulum augue tortor, posuere vitae ligula et, pellentesque pharetra lacus.
-                Aenean commodo condimentum imperdiet. Curabitur nec turpis viverra, eleifend dolor sed, aliquam eros.
-                Maecenas luctus erat vitae eros egestas, a faucibus dolor pellentesque.</p>
+            <div class="col-md-6">
+                <h3>Please submit your documents here</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim molestias quae ab inventore corrupti suscipit eos consequatur nostrum rerum adipisci neque atque nulla cum, expedita, et nobis voluptas! Quibusdam officiis at suscipit ad inventore ex autem animi iste architecto esse, impedit tempora, ab ipsa nobis error vitae reiciendis ut sit.</p>
+            </div>
+            <div class="col-md-6">
+                <form class="form_data" action="#" method="POST">
+                    <input type="file" class="btnSubmit">
+                    <input type="submit" value="Submit" class="btnSubmit btn btn-outline-danger btn-lg">
+                </form>
+                <br>
+                <p class="text-danger file_name">OOOPS! File name is required!</p>
+                <p class="lead text-success">Thank you for submitting the required documents!.</p>
+            </div>
         </div>
-    </div>
+    </section>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 

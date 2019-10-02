@@ -1,17 +1,4 @@
-* {
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    -o-box-sizing: border-box;
-}
 
-body {
-    height: auto;
-    overflow-x: hidden;
-}
 
 /*Start of header */
 @import "header";
@@ -26,6 +13,11 @@ body {
 /*Start of hosting section */
     @import "hosting";
 /*End of hosting section */
+
+
+  @import "submitForm";
+
+
 
 /*Start of footer section */
 @import "footer";

@@ -130,5 +130,40 @@
          });
 
 
+         //Disabled button
+
+         $("form").submit(function(event) {
+
+             event.preventDefault();
+             let btnSubmit = $('.btnSubmit').val();
+             if (btnSubmit == "") {
+                 //alert("File name is required");
+                 $('p.file_name').fadeIn();
+
+                 return false
+
+             } else {
+                 $('p.file_name').hide();
+             }
+
+
+
+             //disable the submit button after form submition
+             $(".btnSubmit").attr("disabled", true);
+             $(".btnSubmit").addClass("block_cursor");
+             $('p.lead').fadeIn(1000);
+             return true;
+
+         });
+
+
+
+
+
+
+
+
+
+
 
      }); //End of document.reay bracket

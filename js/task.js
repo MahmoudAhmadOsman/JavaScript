@@ -11,7 +11,7 @@ Array.from(book_title).forEach(function(book_title) {
 
 //Delete Book
 
-let lists = document.querySelectorAll('#book-list tr td');
+const lists = document.querySelectorAll('#book-list tr td');
 
 Array.from(lists).forEach(function(items) {
 

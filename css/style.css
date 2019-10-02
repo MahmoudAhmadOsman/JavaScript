@@ -1,3 +1,4 @@
+/*Start of header */
 * {
   padding: 0px;
   margin: 0px;
@@ -13,7 +14,6 @@ body {
   overflow-x: hidden;
 }
 
-/*Start of header */
 .form_header {
   background-color: #dad7d763;
   width: auto;
@@ -52,6 +52,15 @@ input[type="email"]:focus {
 .content {
   width: 450px;
   margin-top: 40px;
+}
+
+p.lead {
+  display: none;
+  font-size: 27px;
+}
+
+.block_cursor:hover {
+  cursor: no-drop;
 }
 
 /*End of header */
@@ -177,6 +186,10 @@ a.del_book {
 }
 
 /*End of hosting section */
+.file_name {
+  display: none;
+}
+
 /*Start of footer section */
 .footer {
   width: 100%;
