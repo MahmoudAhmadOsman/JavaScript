@@ -158,7 +158,27 @@
 
 
 
+         //Software News updates
 
+         $('span.read_more').click(function() {
+             $('.para_height').toggle(100);
+             $('span.read_more').hide();
+             // $(this).text('Read less...');
+             $('span.read_less').show();
+
+
+         });
+
+
+         $('span.read_less').click(function() {
+             $('.para_height').toggle(100);
+             $('span.read_less').hide();
+             $('span.read_more').show();
+
+
+
+
+         });
 
 
 

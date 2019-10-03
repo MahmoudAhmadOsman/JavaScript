@@ -1,3 +1,60 @@
 .file_name{
 	display: none;
 }
+
+ 
+
+// Disabled button
+p.lead {
+    display: none;
+    font-size: 34px;
+}
+
+.block_cursor:hover {
+    cursor: no-drop;
+
+}
+ 
+
+
+/*to do list*/
+
+#item_list{
+	position: relative;
+
+	input[type="text"]
+	{
+		background-color:#cccc;
+	}
+}
+
+
+
+
+
+/* Software Updates section */
+.software_updates{
+	width: auto;
+	position: relative;
+	height: 20px;
+	display: block;
+h1{
+	margin-bottom: 25px;
+}
+
+	p.para_height{
+		color: #666;
+		display: none;
+	 
+	}
+	.read_less{
+		display: none
+	}
+	.read_more,
+	.read_less{
+		cursor: pointer;
+		margin: 10px 35%;
+		 
+
+	}
+}

@@ -47,17 +47,17 @@ Array.from(lists).forEach(function(items) {
 
 function processItems() {
 
-    if (document.formTwo.itemName.value == "") {
+    if (document.formTwo.name.value == "") {
         alert("Item name is required!");
-        document.formTwo.itemName.focus();
-        return false;
+        document.formTwo.name.focus();
+        return false
     }
 
 
-    var item_list = document.getElementById('item_list').value,
+    var itemList = document.getElementById('itemList').value,
         listNode = document.getElementById('list'),
         liNode = document.createElement("LI"),
-        textNode = document.createTextNode(item_list);
+        textNode = document.createTextNode(itemList);
 
     liNode.appendChild(textNode);
     listNode.appendChild(liNode);
