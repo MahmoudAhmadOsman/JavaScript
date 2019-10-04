@@ -1,5 +1,5 @@
 *{padding:0;margin:0;box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-ms-box-sizing:border-box;-o-box-sizing:border-box}
-body{height:auto;overflow-x:hidden}
+body{height:1500px;overflow-x:hidden}
 .form_header{background-color:#dad7d763;width:auto;height:80px;margin-bottom:60px;text-align:center;line-height:80px}
 .form_header h1{line-height:65px;font-size:60px}
 .para{text-align:left}
@@ -38,5 +38,12 @@ p.lead{display:none;font-size:34px}
 .software_updates p.para_height{color:#666;display:none}
 .software_updates .read_less{display:none}
 .software_updates .read_less,.software_updates .read_more{cursor:pointer;margin:10px 35%}
+.avaible_lists{position:relative}
+.avaible_lists table.table thead th{background-color:#121215;color:#fff}
+.school_year{width:auto;height:auto;position:relative}
+.school_year .previousYear{display:none}
+.school_year #uploadDocs{margin-top:10px}
+.school_year p.doctypeError{display:none}
+.school_year p.thanksdocs{display:none}
 .footer{width:100%;min-height:150px;margin-top:40px;background-color:#49494a;text-align:center}
 .footer p{line-height:150px;color:#fff}

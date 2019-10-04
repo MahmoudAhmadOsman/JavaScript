@@ -132,7 +132,7 @@
 
          //Disabled button
 
-         $("form").submit(function(event) {
+         $("form.form_data").submit(function(event) {
 
              event.preventDefault();
              let btnSubmit = $('.btnSubmit').val();
@@ -179,6 +179,52 @@
 
 
          });
+
+
+//Document uploads
+$('form.docs').submit(function(e){
+    e.preventDefault ();
+    let uploadDocs = $('#uploadDocs').val();
+
+if(uploadDocs == ""){
+    $('p.doctypeError').fadeIn();
+    return false;
+    }
+    else{
+        $('p.doctypeError').hide();
+        $('p.thanksdocs').fadeIn(1000);
+        
+    }
+
+
+});
+
+
+
+//On document selection
+
+$('select[name = "changeYears"]').change(function(){
+
+     if($(this).val() == "previous"){
+        //alert("previous");
+        $('.currentYear').hide();
+        $('.previousYear').fadeIn();
+     }
+
+
+     if($(this).val() == "current"){
+        //alert("Current");
+      $('.previousYear').hide();
+       $('.currentYear').show();
+        
+     }
+
+
+
+
+
+});
+
 
 
 

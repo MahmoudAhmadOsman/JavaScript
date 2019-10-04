@@ -1,0 +1,20 @@
+/*Start of school year and douments uploads*/
+.school_year{
+    width: auto;
+    height: auto;
+    position: relative;
+
+    .previousYear{
+        display: none
+    }
+
+    #uploadDocs{
+        margin-top: 10px;
+    }
+    p.doctypeError{
+        display: none
+    }
+    p.thanksdocs{display: none;}
+}
+
+/*End of school year and douments uploads*/
