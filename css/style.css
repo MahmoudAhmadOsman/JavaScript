@@ -216,6 +216,20 @@ p.lead {
   display: none;
 }
 
+.software_updates img {
+  opacity: .5;
+  -webkit-transition: opacity .2s ease-in-out;
+  transition: opacity .2s ease-in-out;
+  -webkit-transition: opacity .5s ease-in-out;
+  -ms-transition: opacity .5s ease-in-out;
+  -moz-transition: opacity .5s ease-in-out;
+  -o-transition: opacity .5s ease-in-out;
+}
+
+.software_updates img:hover {
+  opacity: 1;
+}
+
 .software_updates .read_less {
   display: none;
 }
