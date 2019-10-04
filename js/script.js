@@ -215,7 +215,7 @@ $('select[name = "changeYears"]').change(function(){
      if($(this).val() == "current"){
         //alert("Current");
       $('.previousYear').hide();
-       $('.currentYear').show();
+       $('.currentYear').fadeIn();
         
      }
 
