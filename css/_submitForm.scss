@@ -1,13 +1,19 @@
 .file_name{
 	display: none;
+	background-color: #f99;
+	color: #fff !important;
+	padding: 5px;
 }
 
  
 
 // Disabled button
 p.lead {
-    display: none;
-    font-size: 24px;
+	display: none;
+	font-size: 24px;
+	background-color: #28a745;
+	color: #fff !important;
+	padding: 5px;
 }
 
 .block_cursor:hover {
@@ -17,7 +23,7 @@ p.lead {
  
 
 
-/*to do list*/
+/*Start of to do list section */
 
 #item_list{
 	position: relative;
@@ -27,12 +33,12 @@ p.lead {
 		background-color:#cccc;
 	}
 }
+/*End of to do list section */
 
 
 
 
-
-/* Software Updates section */
+/* Start of Software Updates section */
 .software_updates{
 	width: auto;
 	position: relative;
@@ -72,3 +78,5 @@ h1{
 
 	}
 }
+
+/* End of Software Updates section */
