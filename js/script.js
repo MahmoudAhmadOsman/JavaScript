@@ -181,49 +181,90 @@
          });
 
 
-//Document uploads
-$('form.docs').submit(function(e){
-    e.preventDefault ();
-    let uploadDocs = $('#uploadDocs').val();
+         //Document uploads
+         $('form.docs').submit(function(e) {
+             e.preventDefault();
+             let uploadDocs = $('#uploadDocs').val();
 
-if(uploadDocs == ""){
-    $('p.doctypeError').fadeIn();
-    return false;
-    }
-    else{
-        $('p.doctypeError').hide();
-        $('p.thanksdocs').fadeIn(1000);
-        
-    }
+             if (uploadDocs == "") {
+                 $('p.doctypeError').fadeIn();
+                 return false;
+             } else {
+                 $('p.doctypeError').hide();
+                 $('p.thanksdocs').fadeIn(1000);
 
-
-});
+             }
 
 
-
-//On document selection
-
-$('select[name = "changeYears"]').change(function(){
-
-     if($(this).val() == "previous"){
-        //alert("previous");
-        $('.currentYear').hide();
-        $('.previousYear').fadeIn();
-     }
+         });
 
 
-     if($(this).val() == "current"){
-        //alert("Current");
-      $('.previousYear').hide();
-       $('.currentYear').fadeIn();
-        
-     }
 
+         //On document selection
+
+         $('select[name = "changeYears"]').change(function() {
+
+             if ($(this).val() == "previous") {
+                 //alert("previous");
+                 $('.currentYear').hide();
+                 $('.previousYear').fadeIn();
+             }
+
+
+             if ($(this).val() == "current") {
+                 //alert("Current");
+                 $('.previousYear').hide();
+                 $('.currentYear').fadeIn();
+
+             }
 
 
 
 
-});
+
+         });
+
+
+
+         //Start of displaying local time section  
+
+         function getTime() {
+
+             //Get current Time
+             let displayTime = new Date();
+             let hours = displayTime.getHours();
+             document.getElementById('hours').innerHTML = "<b>Local Time: </b> " + hours + ":";
+
+             //Get Minutes
+             let minutes = displayTime.getMinutes();
+             document.getElementById('minutes').innerHTML = minutes + ":";
+
+             //Get seconds
+             let seconds = displayTime.getSeconds();
+             document.getElementById('seconds').innerHTML = seconds;
+
+
+
+             if (hours = 10) {
+                 hours = "0" + hours;
+             }
+
+             if (minutes = 10) {
+                 minutes = "0" + minutes;
+             }
+             if (seconds = 10) {
+                 seconds = "0" + seconds;
+             }
+
+         }
+
+
+         setInterval(getTime, 1000);
+
+         //getTime();
+
+
+
 
 
 

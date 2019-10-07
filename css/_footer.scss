@@ -1,13 +1,17 @@
-  
-.footer {
-    width: 100%;
-    min-height: 150px;
-    margin-top: 40px;
-    background-color: #49494a;
-    text-align: center;
-}
+  .footer {
+      width: 100%;
+      min-height: 150px;
+      margin-top: 40px;
+      background-color: #49494a;
+      text-align: center;
+  }
 
-.footer p {
-    line-height: 150px;
-    color: #fff;
-}
+  .footer p {
+      line-height: 150px;
+      color: #fff;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      position: absolute;
+  }

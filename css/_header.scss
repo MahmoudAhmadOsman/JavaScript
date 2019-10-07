@@ -10,6 +10,7 @@
 
 body {
     height: 1500px;
+ 
     overflow-x: hidden;
 }
 
@@ -35,6 +36,7 @@ body {
 input[type="text"],
 input[type="email"] {
     width: 98%;
+    -webkit-transition: ease-in-out, width .35s ease-in-out;
     transition: ease-in-out, width .35s ease-in-out;
 }
 

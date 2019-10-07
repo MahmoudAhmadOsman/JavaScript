@@ -273,6 +273,24 @@ p.lead {
 }
 
 /*End of school year and douments uploads*/
+/* displayDate section */
+.displayDate {
+  position: relative;
+  min-height: 450px;
+}
+
+.displayDate .fa-arrow-right {
+  font-size: 56px;
+  color: #ff3535;
+}
+
+.displayDate small.sm {
+  margin-top: 10px;
+  position: absolute;
+  margin-left: 20px;
+  font-size: 25px;
+}
+
 /*Start of footer section */
 .footer {
   width: 100%;
@@ -285,6 +303,11 @@ p.lead {
 .footer p {
   line-height: 150px;
   color: #fff;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  position: absolute;
 }
 
 /*End of footer section */
