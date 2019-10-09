@@ -1,0 +1,82 @@
+#skills__tools{
+    position: relative;
+    > h1{
+        margin-bottom: 45px;
+        text-align: center
+    }
+.show__overlay__bg {
+    width: auto;
+    min-height: 250px;
+    position: relative;
+    display: block;
+    margin-bottom: 50px;
+
+     img {
+        width: 100%;
+        display: block;
+        max-height: 250px;
+  
+    }
+    .image {
+        display: block;
+        min-width: 100%;
+        min-height: 250px;
+    }
+
+    .overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(132, 106, 106, 0.4);
+        overflow: hidden;
+        width: 100%;
+        height: 0;
+        transition: .6s ease-in-out;
+        -webkit-transition: .6s ease-in-out;
+        -moz-transition: .6s ease-in-out;
+        -ms-transition: .6s ease-in-out;
+        -o-transition: .6s ease-in-out;
+
+        .text {
+            min-width: 100%;
+            color: white;
+            font-size: 14px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            -webkit-transform: translate(-50%, -50%);
+            -o-transform: translate(-50%, -50%);
+            -moz-transform: translate(-50%, -50%);
+            text-align: left;
+            ul{
+                position: relative;
+                li{
+                    margin: auto 1px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+&:hover .overlay{
+    height: 100%;
+}
+
+span {
+    position: absolute;
+    width: 100%;
+    height: 35px;
+    background-color: rgb(88, 67, 67);
+    color: #fff;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: left;
+}
+
+
+}
+
+}

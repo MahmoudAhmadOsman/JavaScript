@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="icon" type="image/jpg" href="https://www.netsansoftware.com/images/netsansoftware_favicon.jpg">
-        <title>JavaScript</title>
-       
-        <script src="https://kit.fontawesome.com/8500ff7081.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/style.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/jpg" href="https://www.netsansoftware.com/images/netsansoftware_favicon.jpg">
+    <title>JavaScript</title>
+    <script src="https://kit.fontawesome.com/8500ff7081.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
 
 <body>
     <div class="container">
@@ -31,7 +30,7 @@
                         <li class="nav-item">
                             <a class="nav-link" href="function.html">Function</a>
                         </li>
-                          <li class="nav-item">
+                        <li class="nav-item">
                             <a class="nav-link" href="book.html">Books</a>
                         </li>
                         <li class="nav-item">
@@ -43,7 +42,8 @@
         </div>
     </div>
     <div class="container mt-5">
-        <h1>Self Invoking Function</h1><hr>
+        <h1>Self Invoking Function</h1>
+        <hr>
         <h3 class="text-danger">Hover over</h3>
         <div class="row">
             <p class="btn para">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -52,35 +52,185 @@
                 Aenean commodo condimentum imperdiet. Curabitur nec turpis viverra, eleifend dolor sed, aliquam eros.
                 Maecenas luctus erat vitae eros egestas, a faucibus dolor pellentesque.</p>
         </div>
-    </div><hr>
-
-
-
+    </div>
+    <hr>
     <section class="displayDate">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                <h3>Display Current Local Time</h3>
-                <p></p><i class="fas fa-arrow-right"></i>               <small class="sm"> See  local time</small></p>
+                    <h3>Display Current Local Time</h3>
+                    <p><i class="fas fa-arrow-right"></i><small class="sm"> See local time</small></p>
                 </div>
                 <div class="col-md-6">
-                    <h3>Local Time -  <code>Vermont</code></h3>
-                   <div class="btn btn-outline-danger btn-lg">
-                    <span id="hours" ></span>
-                    <span id="minutes"></span>
-                    <span id="seconds"></span>
-                   </div>
+                    <h3>Your Local Time</h3>
+                    <div class="btn btn-outline-danger btn-lg">
+                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                        <span id="hours"></span>
+                        <span id="minutes"></span>
+                        <span id="seconds"></span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-
-
-  
-
-
-
-
+    <section class="container" id="skills__tools">
+        <h1 class="text-center text-danger">Skills and Tools</h1>
+        <div class="row">
+            <!-- Start of the first Box -->
+            <div class="col-lg-4">
+                <div class="show__overlay__bg">
+                    <img src="https://placeimg.com/640/480/tech/188" alt="html" class="image img-responsive" />
+                    <div class="overlay">
+                        <div class="text">
+                            <ul>
+                                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
+                                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
+                                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <span> HTML</span>
+                </div>
+            </div>
+            <!-- End of the first Box-->
+            <!-- Start of the 2nd Box -->
+            <div class="col-lg-4">
+                <div class="show__overlay__bg">
+                    <img src="https://placeimg.com/640/480/tech/258" alt="html" class="image img-responsive" />
+                    <div class="overlay">
+                        <div class="text">
+                            <ul>
+                                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
+                                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
+                                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <span> CSS</span>
+                </div>
+            </div>
+            <!-- End of the 2nd Box-->
+            <!-- Start of the 3rd Box -->
+            <div class="col-lg-4">
+                <div class="show__overlay__bg">
+                    <img src="https://placeimg.com/640/480/tech/188" alt="html" class="image img-responsive" />
+                    <div class="overlay">
+                        <div class="text">
+                            <ul>
+                                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
+                                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
+                                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <span> PHP</span>
+                </div>
+            </div>
+            <!-- End of the 3rd Box-->
+            <!-- Start of the 4th Box -->
+            <div class="col-lg-4">
+                <div class="show__overlay__bg">
+                    <img src="https://placeimg.com/640/480/tech/528" alt="html" class="image img-responsive" />
+                    <div class="overlay">
+                        <div class="text">
+                            <ul>
+                                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
+                                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
+                                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <span> JavaScript</span>
+                </div>
+            </div>
+            <!-- End of the 4th Box-->
+            <!-- Start of the 5th Box -->
+            <div class="col-lg-4">
+                <div class="show__overlay__bg">
+                    <img src="https://placeimg.com/640/480/tech/678" alt="html" class="image img-responsive" />
+                    <div class="overlay">
+                        <div class="text">
+                            <ul>
+                                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
+                                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
+                                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <span> jQuery</span>
+                </div>
+            </div>
+            <!-- End of the 5th Box-->
+            <!-- Start of the 6th Box -->
+            <div class="col-lg-4">
+                <div class="show__overlay__bg">
+                    <img src="https://placeimg.com/640/480/tech/898" alt="html" class="image img-responsive" />
+                    <div class="overlay">
+                        <div class="text">
+                            <ul>
+                                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
+                                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
+                                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <span> Java</span>
+                </div>
+            </div>
+            <!-- End of the 7th Box-->
+            <!-- Start of the 6th Box -->
+            <div class="col-lg-4">
+                <div class="show__overlay__bg">
+                    <img src="https://placeimg.com/640/480/tech/378" alt="html" class="image img-responsive" />
+                    <div class="overlay">
+                        <div class="text">
+                            <ul>
+                                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
+                                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
+                                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <span> Bootstrap</span>
+                </div>
+            </div>
+            <!-- End of the 7th Box-->
+            <!-- Start of the 6th Box -->
+            <div class="col-lg-4">
+                <div class="show__overlay__bg">
+                    <img src="https://placeimg.com/640/480/tech/798" alt="html" class="image img-responsive" />
+                    <div class="overlay">
+                        <div class="text">
+                            <ul>
+                                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
+                                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
+                                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <span> Sass</span>
+                </div>
+            </div>
+            <!-- End of the 6th Box-->
+            <!-- Start of the 6th Box -->
+            <div class="col-lg-4">
+                <div class="show__overlay__bg">
+                    <img src="https://placeimg.com/640/480/tech/518" alt="html" class="image img-responsive" />
+                    <div class="overlay">
+                        <div class="text">
+                            <ul>
+                                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
+                                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
+                                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <span> WordPress</span>
+                </div>
+            </div>
+            <!-- End of the 6th Box-->
+        </div>
+    </section>
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
